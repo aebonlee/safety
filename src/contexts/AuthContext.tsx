@@ -93,7 +93,7 @@ export const AuthProvider = ({ children }: AuthProviderProps): ReactElement => {
       if (u) {
         loadProfile(u);
         if (event === 'SIGNED_IN') {
-          client.from('user_profiles')
+          client.from('safety_user_profiles')
             .update({ last_sign_in_at: new Date().toISOString() })
             .eq('id', u.id)
             .then(() => {});

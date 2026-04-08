@@ -85,6 +85,19 @@ export default function SafetyEducation(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            {/* References */}
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 제29조~제33조 (안전보건교육)' : 'Occupational Safety and Health Act, Articles 29-33 (Safety & Health Education)'}</li>
+                <li>{isKo ? '산업안전보건법 시행규칙 별표 4, 5 (교육시간 및 내용)' : 'Enforcement Rules, Annexed Tables 4 & 5 (Education Hours and Content)'}</li>
+                <li>{isKo ? '고용노동부 — ' : 'Ministry of Employment and Labor — '}<a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">www.moel.go.kr</a></li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 교육자료실 — ' : 'KOSHA Education Resources — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+                <li>{isKo ? '안전보건교육원 — ' : 'Safety and Health Education Center — '}<a href="https://www.koshats.or.kr" target="_blank" rel="noopener noreferrer">www.koshats.or.kr</a></li>
+                <li>{isKo ? '특별교육 대상 작업별 교육내용 (시행규칙 별표 5)' : 'Special Education Content by Work Type (Enforcement Rules, Annexed Table 5)'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

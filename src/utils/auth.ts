@@ -62,7 +62,7 @@ export async function getProfile(userId: string): Promise<UserProfile | null> {
   const client = getSupabase();
   if (!client) return null;
   const { data, error } = await client
-    .from('user_profiles')
+    .from('safety_user_profiles')
     .select('*')
     .eq('id', userId)
     .single();
@@ -80,7 +80,7 @@ export async function updateProfile(
   const client = getSupabase();
   if (!client) return null;
   const { data, error } = await client
-    .from('user_profiles')
+    .from('safety_user_profiles')
     .update({ ...updates, updated_at: new Date().toISOString() })
     .eq('id', userId)
     .select()

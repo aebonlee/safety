@@ -85,6 +85,19 @@ export default function EmergencyResponse(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            {/* References */}
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 제51조~제56조 (비상조치 등)' : 'Occupational Safety and Health Act, Articles 51-56 (Emergency Measures)'}</li>
+                <li>{isKo ? '화학물질관리법 (법률 제18466호)' : 'Chemical Substances Control Act (Act No. 18466)'}</li>
+                <li>{isKo ? '소방청 — ' : 'National Fire Agency — '}<a href="https://www.nfa.go.kr" target="_blank" rel="noopener noreferrer">www.nfa.go.kr</a></li>
+                <li>{isKo ? '대한적십자사 응급처치 가이드 — ' : 'Korean Red Cross First Aid Guide — '}<a href="https://www.redcross.or.kr" target="_blank" rel="noopener noreferrer">www.redcross.or.kr</a></li>
+                <li>{isKo ? '대한심폐소생협회 CPR 가이드라인 — ' : 'Korean Association of Cardiopulmonary Resuscitation CPR Guidelines — '}<a href="https://www.kacpr.org" target="_blank" rel="noopener noreferrer">www.kacpr.org</a></li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 비상대응 매뉴얼 — ' : 'KOSHA Emergency Response Manual — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

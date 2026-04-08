@@ -85,6 +85,19 @@ export default function HealthManagement(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            {/* References */}
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 제129조~제134조 (건강진단)' : 'Occupational Safety and Health Act, Articles 129-134 (Health Examinations)'}</li>
+                <li>{isKo ? '산업안전보건기준에 관한 규칙 (유해물질 관리)' : 'Standards on Occupational Safety and Health (Hazardous Substance Management)'}</li>
+                <li>{isKo ? '고용노동부 — ' : 'Ministry of Employment and Labor — '}<a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">www.moel.go.kr</a></li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 직업건강 가이드 — ' : 'KOSHA Occupational Health Guide — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+                <li>{isKo ? '산업안전보건연구원 — ' : 'Occupational Safety and Health Research Institute — '}<a href="https://oshri.kosha.or.kr" target="_blank" rel="noopener noreferrer">oshri.kosha.or.kr</a></li>
+                <li>{isKo ? '근골격계 부담작업의 범위 및 유해요인조사 방법에 관한 고시 (고용노동부 고시)' : 'Notice on Scope of Musculoskeletal Burden Work and Hazard Investigation Methods (MOEL Notice)'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

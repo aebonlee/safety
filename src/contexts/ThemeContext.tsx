@@ -13,8 +13,8 @@ interface ThemeContextValue {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 const COLOR_OPTIONS = [
+  { name: 'darkblue', color: '#1D4ED8' },
   { name: 'safety', color: '#DC2626' },
-  { name: 'ocean', color: '#2563EB' },
   { name: 'forest', color: '#059669' },
   { name: 'sunset', color: '#D97706' },
   { name: 'cherry', color: '#E11D48' },
@@ -38,7 +38,7 @@ function getAutoTheme(): string {
 
 export function ThemeProvider({ children }: { children: ReactNode }): ReactElement {
   const [mode, setMode] = useState(() => getCookie('theme_mode') || 'auto');
-  const [colorTheme, setColorThemeState] = useState(() => getCookie('color_theme') || 'safety');
+  const [colorTheme, setColorThemeState] = useState(() => getCookie('color_theme') || 'darkblue');
 
   const resolvedTheme = mode === 'auto' ? getAutoTheme() : mode;
 
@@ -47,7 +47,7 @@ export function ThemeProvider({ children }: { children: ReactNode }): ReactEleme
   }, [resolvedTheme]);
 
   useEffect(() => {
-    if (colorTheme === 'safety') {
+    if (colorTheme === 'darkblue') {
       document.documentElement.removeAttribute('data-color');
     } else {
       document.documentElement.setAttribute('data-color', colorTheme);

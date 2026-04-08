@@ -85,6 +85,19 @@ export default function AccidentPrevention(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            {/* References */}
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 제57조~제65조 (산업재해 조사 및 기록)' : 'Occupational Safety and Health Act, Articles 57-65 (Accident Investigation and Recording)'}</li>
+                <li>{isKo ? '고용노동부 산업재해 현황 통계 — ' : 'MOEL Industrial Accident Statistics — '}<a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">www.moel.go.kr</a></li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 재해사례 — ' : 'KOSHA Accident Case Studies — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+                <li>{isKo ? 'Heinrich, H.W. (1931). Industrial Accident Prevention. McGraw-Hill.' : 'Heinrich, H.W. (1931). Industrial Accident Prevention. McGraw-Hill.'}</li>
+                <li>{isKo ? '개인보호구의 지급 및 관리에 관한 기준 (고용노동부 고시)' : 'Standards on PPE Provision and Management (MOEL Notice)'}</li>
+                <li>{isKo ? '안전보건공단 안전보건기술지침(KOSHA GUIDE)' : 'KOSHA Safety and Health Technical Guidelines (KOSHA GUIDE)'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

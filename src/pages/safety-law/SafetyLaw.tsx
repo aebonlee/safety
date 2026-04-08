@@ -87,6 +87,17 @@ export default function SafetyLaw(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 (법률 제19611호, 2023.8.8. 일부개정)' : 'Industrial Safety and Health Act (Act No. 19611, Amended 2023.8.8.)'}</li>
+                <li>{isKo ? '산업안전보건법 시행령 / 시행규칙' : 'Enforcement Decree / Rules of the Industrial Safety and Health Act'}</li>
+                <li>{isKo ? '고용노동부 — ' : 'Ministry of Employment and Labor — '}<a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">www.moel.go.kr</a></li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) — ' : 'Korea Occupational Safety and Health Agency — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+                <li>{isKo ? '중대재해처벌법 (법률 제17907호, 2021.1.26. 제정)' : 'Serious Accidents Punishment Act (Act No. 17907, Enacted 2021.1.26.)'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

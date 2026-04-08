@@ -85,6 +85,19 @@ export default function WorkEnvironment(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            {/* References */}
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 제125조~제128조 (작업환경측정)' : 'Occupational Safety and Health Act, Articles 125-128 (Work Environment Measurement)'}</li>
+                <li>{isKo ? '작업환경측정 및 지정측정기관 평가 등에 관한 고시 (고용노동부)' : 'Notice on Work Environment Measurement and Designated Measurement Agencies (MOEL)'}</li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 작업환경 가이드 — ' : 'KOSHA Work Environment Guide — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+                <li>{isKo ? '밀폐공간 보건작업 프로그램 수립 시행에 관한 기술지침 (KOSHA GUIDE H-80-2022)' : 'Technical Guidelines on Confined Space Health Work Program (KOSHA GUIDE H-80-2022)'}</li>
+                <li>{isKo ? '산업환기공학 (ACGIH Industrial Ventilation Manual)' : 'ACGIH Industrial Ventilation: A Manual of Recommended Practice'}</li>
+                <li>{isKo ? '소음 및 진동 관리법 (법률 제18469호)' : 'Noise and Vibration Control Act (Act No. 18469)'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

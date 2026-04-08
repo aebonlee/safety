@@ -226,3 +226,53 @@
 .comparison-table td {
     color: var(--text-secondary);
 }
+
+/* References */
+.guide-references {
+    margin-top: 48px;
+    padding: 24px;
+    background: var(--bg-light-gray);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+}
+
+.guide-references h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guide-references ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guide-references li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 6px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.guide-references li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: var(--text-light);
+}
+
+.guide-references a {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.guide-references a:hover {
+    text-decoration: underline;
+}

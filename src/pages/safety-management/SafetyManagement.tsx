@@ -85,6 +85,17 @@ export default function SafetyManagement(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 안전관리 기술지침 — ' : 'KOSHA Safety Management Technical Guidelines — '}<a href="https://www.kosha.or.kr" target="_blank" rel="noopener noreferrer">www.kosha.or.kr</a></li>
+                <li>{isKo ? '산업안전보건기준에 관한 규칙 (고용노동부령)' : 'Rules on Industrial Safety and Health Standards (MOEL Ordinance)'}</li>
+                <li>{isKo ? '고용노동부 안전보건 가이드 — ' : 'MOEL Safety and Health Guide — '}<a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">www.moel.go.kr</a></li>
+                <li>{isKo ? 'KOSHA GUIDE (기계안전, 전기안전, 화재폭발 분야)' : 'KOSHA GUIDE (Machinery Safety, Electrical Safety, Fire & Explosion)'}</li>
+                <li>{isKo ? '안전보건공단 「사업장 안전관리 매뉴얼」' : 'KOSHA Workplace Safety Management Manual'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>

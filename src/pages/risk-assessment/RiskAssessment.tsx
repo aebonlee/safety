@@ -85,6 +85,19 @@ export default function RiskAssessment(): ReactElement {
                 <i className="fa-solid fa-arrow-right" />
               </button>
             </div>
+
+            {/* References */}
+            <div className="guide-references">
+              <h4><i className="fa-solid fa-book" /> {isKo ? '출처 및 참고자료' : 'References'}</h4>
+              <ul>
+                <li>{isKo ? '산업안전보건법 제36조 (위험성평가)' : 'Occupational Safety and Health Act, Article 36 (Risk Assessment)'}</li>
+                <li>{isKo ? '사업장 위험성평가에 관한 지침 (고용노동부 고시 제2023-19호)' : 'Guidelines on Workplace Risk Assessment (MOEL Notice No. 2023-19)'}</li>
+                <li>{isKo ? '한국산업안전보건공단(KOSHA) 위험성평가 지원시스템 — ' : 'KOSHA Risk Assessment Support System — '}<a href="https://kras.kosha.or.kr" target="_blank" rel="noopener noreferrer">kras.kosha.or.kr</a></li>
+                <li>{isKo ? 'KOSHA GUIDE X-001-2012 (사업장 위험성평가에 관한 지침)' : 'KOSHA GUIDE X-001-2012 (Guidelines on Workplace Risk Assessment)'}</li>
+                <li>{isKo ? '고용노동부 — ' : 'Ministry of Employment and Labor — '}<a href="https://www.moel.go.kr" target="_blank" rel="noopener noreferrer">www.moel.go.kr</a></li>
+                <li>{isKo ? 'ISO 45001:2018 (안전보건경영시스템)' : 'ISO 45001:2018 (Occupational Health and Safety Management Systems)'}</li>
+              </ul>
+            </div>
           </main>
         </div>
       </div>
