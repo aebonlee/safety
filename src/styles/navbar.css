@@ -39,6 +39,10 @@
     gap: 4px;
 }
 
+.navbar-logo:hover {
+    text-decoration: none;
+}
+
 .logo-study { color: var(--primary); }
 .logo-master { color: var(--text-primary); }
 
