@@ -1,0 +1,106 @@
+const translations: Record<string, Record<string, unknown>> = {
+  ko: {
+    nav: {
+      about: '소개',
+      community: '커뮤니티',
+    },
+    hero: {
+      badge: '안전보건관리 가이드 2026',
+      title: '안전보건관리의\n',
+      titleHighlight: '모든 것을 마스터하세요',
+      description: '산업안전보건법, 위험성평가, 안전관리, 보건관리, 비상대응까지 — 안전보건관리의 A to Z를 체계적으로 배워보세요.',
+      cta: '학습 시작하기',
+      ctaSecondary: '더 알아보기',
+    },
+    features: {
+      title: '왜 DreamIT Safety인가?',
+      subtitle: '현장 실무 중심의 안전보건관리 학습 자료를 체계적으로 정리했습니다.',
+      law: { title: '법령 이해', desc: '산업안전보건법의 핵심 조항과 사업주·근로자의 의무를 알기 쉽게 설명합니다.' },
+      risk: { title: '위험성평가', desc: '사업장 유해·위험요인을 체계적으로 파악하고 관리하는 방법을 배웁니다.' },
+      prevention: { title: '재해 예방', desc: '산업재해의 원인을 분석하고 효과적인 예방 대책을 수립하는 노하우를 공유합니다.' },
+      health: { title: '건강 관리', desc: '직업병 예방, 작업환경 개선, 근로자 건강 보호를 위한 실무 지식을 제공합니다.' },
+    },
+    home: {
+      pathsTitle: '학습 경로',
+      pathsSubtitle: '목표에 맞는 학습 경로를 선택하고 체계적으로 학습하세요.',
+      workflowTitle: '학습 플로우',
+      workflowSubtitle: '4단계로 안전보건관리를 마스터하세요.',
+      step1: '법규 기초 이해',
+      step1desc: '산업안전보건법의 체계와 주요 조항을 파악하여 기초를 다집니다.',
+      step2: '위험요인 파악',
+      step2desc: '사업장의 유해·위험요인을 식별하고 위험성평가를 수행합니다.',
+      step3: '예방 대책 수립',
+      step3desc: '안전관리, 보건관리, 작업환경 개선 대책을 실무에 적용합니다.',
+      step4: '비상 대응 체계',
+      step4desc: '비상상황 대응 절차와 응급처치법을 숙지하여 만일에 대비합니다.',
+    },
+    stats: {
+      guides: '학습 가이드',
+      topics: '학습 주제',
+      categories: '학습 카테고리',
+    },
+    cta: {
+      title: '지금 바로 안전보건관리를 시작하세요',
+      description: '체계적인 안전보건관리로 안전한 사업장, 건강한 근로자를 만들어 가세요.',
+      button: '학습 시작하기',
+    },
+    footer: {
+      description: '안전보건관리의 모든 것을 배우는 종합 학습 플랫폼입니다.',
+      descriptionDetail: '산업안전보건법, 위험성평가, 안전관리, 보건관리 등 체계적인 안전보건 학습 자료를 제공합니다.',
+      quickLinks: '빠른 링크',
+    },
+  },
+  en: {
+    nav: {
+      about: 'About',
+      community: 'Community',
+    },
+    hero: {
+      badge: 'Safety & Health Management Guide 2026',
+      title: 'Master Everything About\n',
+      titleHighlight: 'Safety & Health Management',
+      description: 'From the Industrial Safety Act to risk assessment, safety management, and emergency response — learn the A to Z systematically.',
+      cta: 'Start Learning',
+      ctaSecondary: 'Learn More',
+    },
+    features: {
+      title: 'Why DreamIT Safety?',
+      subtitle: 'We\'ve organized practical safety and health management materials systematically.',
+      law: { title: 'Legal Framework', desc: 'Understand the key provisions of the Industrial Safety and Health Act clearly.' },
+      risk: { title: 'Risk Assessment', desc: 'Learn to systematically identify and manage workplace hazards and risks.' },
+      prevention: { title: 'Accident Prevention', desc: 'Analyze accident causes and establish effective prevention measures.' },
+      health: { title: 'Health Management', desc: 'Practical knowledge for occupational disease prevention and worker health protection.' },
+    },
+    home: {
+      pathsTitle: 'Learning Paths',
+      pathsSubtitle: 'Choose a learning path that matches your goals and learn systematically.',
+      workflowTitle: 'Learning Flow',
+      workflowSubtitle: 'Master safety and health management in 4 systematic steps.',
+      step1: 'Understand Regulations',
+      step1desc: 'Build a foundation by understanding the Industrial Safety and Health Act framework.',
+      step2: 'Identify Hazards',
+      step2desc: 'Identify workplace hazards and perform risk assessments.',
+      step3: 'Establish Prevention',
+      step3desc: 'Apply safety management, health management, and workplace improvement measures.',
+      step4: 'Emergency Preparedness',
+      step4desc: 'Master emergency response procedures and first aid techniques.',
+    },
+    stats: {
+      guides: 'Study Guides',
+      topics: 'Topics Covered',
+      categories: 'Categories',
+    },
+    cta: {
+      title: 'Start Safety & Health Management Today',
+      description: 'Build a safe workplace and healthy workers through systematic safety management.',
+      button: 'Start Learning',
+    },
+    footer: {
+      description: 'A comprehensive platform for learning safety and health management.',
+      descriptionDetail: 'Providing systematic learning materials for industrial safety law, risk assessment, and more.',
+      quickLinks: 'Quick Links',
+    },
+  },
+};
+
+export default translations;
