@@ -235,3 +235,27 @@ npx gh-pages -d dist
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
+
+## 변경 이력 (Changelog)
+
+### 2026-04-09
+
+| 커밋 | 설명 |
+|------|------|
+| `fb0d319` | Initial commit (리포지토리 생성) |
+| `f71381c` | Create CNAME (safety.dreamitbiz.com 도메인 설정) |
+| `a6a5509` | **feat: 안전보건관리 학습 사이트 전체 구현** - 57개 파일, 8,008줄 |
+| `2f4655d` | fix: 가이드 페이지 사이드바 레이아웃 수정 - `guide-layout`에 `max-width` 및 `margin: 0 auto` 추가 |
+| `927186a` | fix: 로고 호버 시 밑줄 제거 - `.navbar-logo:hover`에 `text-decoration: none` 추가 |
+
+### 주요 버그 수정 내역
+
+1. **사이드바 레이아웃 문제** (`guide-pages.css`, `responsive.css`)
+   - 증상: 학습 페이지의 좌측 사이드바가 뷰포트 왼쪽 끝에 마진/패딩 없이 붙어서 표시
+   - 원인: `.guide-layout`에 `max-width`와 `margin: 0 auto`가 누락
+   - 해결: study 프로젝트와 동일하게 `max-width: var(--container-max)`, `margin: 0 auto` 추가
+
+2. **로고 호버 밑줄** (`navbar.css`)
+   - 증상: 네비게이션 로고에 마우스를 올리면 빨간색 밑줄이 표시
+   - 원인: `base.css`의 전역 `a:hover { text-decoration: underline }` 규칙이 로고 링크에도 적용
+   - 해결: `.navbar-logo:hover { text-decoration: none }` 추가
