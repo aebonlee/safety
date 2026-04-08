@@ -14,7 +14,7 @@
     .nav-links { display: none; }
     .mobile-menu-toggle { display: flex; }
     .nav-auth-group { display: none; }
-    .guide-layout { grid-template-columns: 240px 1fr; }
+    .guide-layout { grid-template-columns: 260px 1fr; }
     .guide-content { padding: 32px; }
     .workflow-grid { grid-template-columns: repeat(2, 1fr); }
 }
