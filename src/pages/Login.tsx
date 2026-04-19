@@ -14,6 +14,15 @@ export default function Login(): ReactElement {
         {/* 좌측: 비주얼 영역 */}
         <div className="login-visual">
           <div className="login-visual-bg" />
+          {/* 그리드 패턴 오버레이 */}
+          <div className="login-grid-pattern" />
+          {/* 플로팅 장식 요소들 */}
+          <div className="login-float login-float-1" />
+          <div className="login-float login-float-2" />
+          <div className="login-float login-float-3" />
+          <div className="login-float login-float-4" />
+          <div className="login-float login-float-5" />
+
           <div className="login-visual-content">
             <div className="login-visual-badge">
               <i className="fa-solid fa-shield-halved" />
@@ -37,20 +46,15 @@ export default function Login(): ReactElement {
 
                 {/* 안전모 쓴 작업자 1 (좌측) */}
                 <g transform="translate(40, 30)">
-                  {/* 몸체 */}
                   <rect x="15" y="75" width="40" height="55" rx="10" fill="rgba(255,255,255,0.12)" />
                   <rect x="20" y="85" width="30" height="8" rx="4" fill="rgba(96,165,250,0.3)" />
-                  {/* 머리 */}
                   <circle cx="35" cy="58" r="16" fill="rgba(255,255,255,0.15)" />
-                  {/* 안전모 */}
                   <path d="M16 54 Q35 28 54 54" fill="#F59E0B" />
                   <rect x="12" y="51" width="46" height="6" rx="3" fill="#F59E0B" />
                   <rect x="30" y="45" width="10" height="8" rx="2" fill="#FBBF24" opacity="0.6" />
-                  {/* 얼굴 */}
                   <circle cx="29" cy="60" r="2" fill="rgba(255,255,255,0.7)" />
                   <circle cx="41" cy="60" r="2" fill="rgba(255,255,255,0.7)" />
                   <path d="M30 66 Q35 69 40 66" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-                  {/* 클립보드 */}
                   <g transform="translate(52, 80)">
                     <rect x="0" y="0" width="20" height="28" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" />
                     <rect x="-2" y="-2" width="8" height="4" rx="2" fill="rgba(255,255,255,0.2)" transform="translate(7,0)" />
@@ -63,48 +67,37 @@ export default function Login(): ReactElement {
 
                 {/* 중앙: 큰 방패 + 체크마크 */}
                 <g transform="translate(150, 15)">
-                  {/* 방패 글로우 */}
                   <path d="M50 0 L95 18 L95 58 Q95 90 50 105 Q5 90 5 58 L5 18 Z"
                         fill="rgba(96,165,250,0.08)" />
-                  {/* 방패 본체 */}
                   <path d="M50 5 L90 22 L90 56 Q90 85 50 98 Q10 85 10 56 L10 22 Z"
                         fill="rgba(59,130,246,0.15)" stroke="rgba(96,165,250,0.6)" strokeWidth="2" />
-                  {/* 내부 방패 */}
                   <path d="M50 18 L78 30 L78 52 Q78 72 50 82 Q22 72 22 52 L22 30 Z"
                         fill="rgba(59,130,246,0.1)" stroke="rgba(96,165,250,0.3)" strokeWidth="1" />
-                  {/* 체크마크 */}
                   <path d="M34 50 L45 62 L68 38" stroke="#60A5FA" strokeWidth="5"
                         strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  {/* 별 장식 */}
                   <circle cx="50" cy="22" r="3" fill="rgba(251,191,36,0.6)" />
                 </g>
 
                 {/* 우측: 상승 차트 */}
                 <g transform="translate(270, 40)">
-                  {/* 차트 배경 */}
                   <rect x="-5" y="-5" width="105" height="100" rx="8" fill="rgba(255,255,255,0.04)" />
-                  {/* 그리드 라인 */}
                   <line x1="0" y1="20" x2="90" y2="20" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
                   <line x1="0" y1="45" x2="90" y2="45" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
                   <line x1="0" y1="70" x2="90" y2="70" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-                  {/* 막대 */}
                   <rect x="5" y="55" width="14" height="35" rx="4" fill="rgba(96,165,250,0.25)" />
                   <rect x="27" y="40" width="14" height="50" rx="4" fill="rgba(96,165,250,0.4)" />
                   <rect x="49" y="25" width="14" height="65" rx="4" fill="rgba(96,165,250,0.55)" />
                   <rect x="71" y="8" width="14" height="82" rx="4" fill="rgba(96,165,250,0.75)" />
-                  {/* 상승선 */}
                   <polyline points="12,52 34,38 56,22 78,6" stroke="#60A5FA" strokeWidth="2.5"
                             strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  {/* 포인트 */}
                   <circle cx="12" cy="52" r="3" fill="#60A5FA" />
                   <circle cx="34" cy="38" r="3" fill="#60A5FA" />
                   <circle cx="56" cy="22" r="3" fill="#60A5FA" />
                   <circle cx="78" cy="6" r="4" fill="#FBBF24" stroke="#F59E0B" strokeWidth="1.5" />
-                  {/* 화살표 */}
                   <path d="M80,4 L86,-2 L82,5" fill="#FBBF24" />
                 </g>
 
-                {/* 안전모 쓴 작업자 2 (우측 소형) */}
+                {/* 작업자 2 (우측 소형) */}
                 <g transform="translate(280, 130)">
                   <rect x="8" y="35" width="24" height="30" rx="6" fill="rgba(255,255,255,0.08)" />
                   <circle cx="20" cy="25" r="10" fill="rgba(255,255,255,0.1)" />
@@ -114,7 +107,7 @@ export default function Login(): ReactElement {
                   <circle cx="24" cy="26" r="1.5" fill="rgba(255,255,255,0.6)" />
                 </g>
 
-                {/* 하단 장식 아이콘들 */}
+                {/* 하단 장식 */}
                 <g transform="translate(20, 180)" opacity="0.4">
                   <polygon points="12,0 0,20 24,20" stroke="rgba(251,191,36,0.8)" strokeWidth="1.5" fill="none" />
                   <line x1="12" y1="6" x2="12" y2="14" stroke="rgba(251,191,36,0.8)" strokeWidth="1.5" strokeLinecap="round" />
@@ -159,6 +152,11 @@ export default function Login(): ReactElement {
 
         {/* 우측: 로그인 카드 */}
         <div className="login-form-area">
+          {/* 우측 배경 장식 */}
+          <div className="login-form-decor login-form-decor-1" />
+          <div className="login-form-decor login-form-decor-2" />
+          <div className="login-form-decor login-form-decor-3" />
+
           <div className="auth-card">
             <div className="auth-card-icon">
               <i className="fa-solid fa-shield-halved" />
@@ -176,6 +174,19 @@ export default function Login(): ReactElement {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.477 3 2 6.477 2 10.5c0 2.47 1.607 4.647 4.035 5.91l-.822 3.05a.5.5 0 0 0 .756.542l3.623-2.396c.787.104 1.59.157 2.408.157 5.523 0 10-3.477 10-7.763C22 6.477 17.523 3 12 3z"/></svg>
                 {isKo ? '카카오로 로그인' : 'Sign in with Kakao'}
               </button>
+            </div>
+            <div className="auth-divider">
+              <span>{isKo ? '안전 관리의 시작' : 'Start of Safety Management'}</span>
+            </div>
+            <div className="auth-trust-badges">
+              <div className="auth-trust-item">
+                <i className="fa-solid fa-lock" />
+                <span>{isKo ? '안전한 로그인' : 'Secure Login'}</span>
+              </div>
+              <div className="auth-trust-item">
+                <i className="fa-solid fa-user-shield" />
+                <span>{isKo ? '개인정보 보호' : 'Privacy Protected'}</span>
+              </div>
             </div>
             <p className="auth-footer-text">
               {isKo
