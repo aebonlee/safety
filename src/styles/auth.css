@@ -6,3 +6,16 @@
     min-height: 60vh;
     padding: 40px 20px;
 }
+
+/* 로그인 일러스트 */
+.login-illustration {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.login-illustration svg {
+    width: 240px;
+    height: auto;
+}
